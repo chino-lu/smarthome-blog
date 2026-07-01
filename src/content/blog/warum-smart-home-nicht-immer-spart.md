@@ -5,6 +5,8 @@ pubDate: 2026-07-01
 readMinutes: 6
 address: "1/1/1"
 sources: "Öko-Institut e.V. im Auftrag der Verbraucherzentrale NRW, „Klimabilanz im Smart Home\" (zitiert nach Polarstern Energie, polarstern-energie.de)"
+image: "/images/post-energie-fork.svg"
+imageAlt: "Eine Bus-Leitung teilt sich in einen effizienten und einen ineffizienten Pfad"
 ---
 
 Die Werbung ist eindeutig: Smart-Home-Technik spart Energie, senkt die Heizkosten, macht dein Zuhause effizienter. Und das stimmt auch — aber nur unter einer Bedingung, die in den meisten Verkaufsprospekten nicht erwähnt wird.

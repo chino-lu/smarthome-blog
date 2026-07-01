@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hausgrundriss mit Sensor-Knoten am Perimeter, ein ausgelöster Sensor leuchtet">
+  <rect width="800" height="420" fill="#0B120F"/>
+
+  <!-- house outline (simple gable footprint) -->
+  <g stroke="#24352C" stroke-width="2.5" fill="none">
+    <path d="M240,300 L240,180 L400,90 L560,180 L560,300 Z"/>
+    <line x1="240" y1="300" x2="560" y2="300"/>
+  </g>
+
+  <!-- door -->
+  <rect x="380" y="250" width="40" height="50" fill="none" stroke="#24352C" stroke-width="2"/>
+  <!-- windows -->
+  <rect x="270" y="220" width="36" height="36" fill="none" stroke="#24352C" stroke-width="2"/>
+  <rect x="494" y="220" width="36" height="36" fill="none" stroke="#24352C" stroke-width="2"/>
+
+  <!-- perimeter bus line connecting sensor nodes -->
+  <path d="M180,330 L620,330 L620,150 L180,150 Z" stroke="#7FBF3D" stroke-width="2" fill="none" stroke-dasharray="1 0" opacity="0.55"/>
+
+  <!-- calm sensor nodes -->
+  <circle cx="180" cy="330" r="7" fill="#0B120F" stroke="#B7FF5C" stroke-width="2.5"/>
+  <circle cx="620" cy="330" r="7" fill="#0B120F" stroke="#B7FF5C" stroke-width="2.5"/>
+  <circle cx="620" cy="150" r="7" fill="#0B120F" stroke="#B7FF5C" stroke-width="2.5"/>
+  <circle cx="400" cy="330" r="7" fill="#0B120F" stroke="#B7FF5C" stroke-width="2.5"/>
+
+  <!-- triggered sensor at window (orange, glowing) -->
+  <circle cx="180" cy="150" r="16" fill="#FF7A50" opacity="0.18"/>
+  <circle cx="180" cy="150" r="9" fill="#0B120F" stroke="#FF7A50" stroke-width="3"/>
+  <circle cx="180" cy="150" r="3.5" fill="#FF7A50"/>
+
+  <text x="180" y="120" font-family="JetBrains Mono, monospace" font-size="12" fill="#FF7A50" text-anchor="middle">ALARM</text>
+</svg>

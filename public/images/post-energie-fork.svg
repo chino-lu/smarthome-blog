@@ -1,0 +1,51 @@
+<svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eine Bus-Leitung teilt sich in einen effizienten grünen und einen ineffizienten orangen Pfad">
+  <rect width="800" height="420" fill="#0B120F"/>
+  <defs>
+    <radialGradient id="g1" cx="15%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#B7FF5C" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#B7FF5C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="90%" cy="90%" r="60%">
+      <stop offset="0%" stop-color="#FF7A50" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#FF7A50" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="420" fill="url(#g1)"/>
+  <rect width="800" height="420" fill="url(#g2)"/>
+
+  <!-- faint background grid traces -->
+  <g stroke="#1c2b22" stroke-width="2" fill="none">
+    <path d="M0,70 L120,70 L120,30"/>
+    <path d="M800,340 L680,340 L680,380"/>
+    <path d="M40,380 L40,320 L160,320"/>
+  </g>
+
+  <!-- main bus line entering from the left -->
+  <path d="M0,210 L280,210" stroke="#93A399" stroke-width="3" fill="none"/>
+  <circle cx="280" cy="210" r="6" fill="#F2F4EF"/>
+
+  <!-- fork: efficient path (up, green) -->
+  <path d="M280,210 C 360,210 360,120 460,120 L 720,120" stroke="#B7FF5C" stroke-width="3.5" fill="none"/>
+  <circle cx="720" cy="120" r="9" fill="#0B120F" stroke="#B7FF5C" stroke-width="3"/>
+  <circle cx="720" cy="120" r="3" fill="#B7FF5C"/>
+  <!-- efficient path nodes -->
+  <circle cx="460" cy="120" r="5" fill="#B7FF5C"/>
+  <circle cx="590" cy="120" r="5" fill="#B7FF5C"/>
+
+  <!-- fork: wasteful path (down, orange) -->
+  <path d="M280,210 C 360,210 360,300 460,300 L 720,300" stroke="#FF7A50" stroke-width="3.5" fill="none" opacity="0.9"/>
+  <circle cx="720" cy="300" r="9" fill="#0B120F" stroke="#FF7A50" stroke-width="3"/>
+  <circle cx="720" cy="300" r="3" fill="#FF7A50"/>
+  <circle cx="460" cy="300" r="5" fill="#FF7A50"/>
+  <circle cx="590" cy="300" r="5" fill="#FF7A50"/>
+
+  <!-- labels as small mono ticks, not real text to keep it iconographic -->
+  <g stroke="#24352C" stroke-width="1.5">
+    <line x1="460" y1="105" x2="460" y2="135"/>
+    <line x1="460" y1="285" x2="460" y2="315"/>
+  </g>
+
+  <!-- percentage markers -->
+  <text x="600" y="100" font-family="JetBrains Mono, monospace" font-size="15" fill="#7FBF3D" text-anchor="middle">−14%</text>
+  <text x="600" y="335" font-family="JetBrains Mono, monospace" font-size="15" fill="#FF7A50" text-anchor="middle">+27%</text>
+</svg>

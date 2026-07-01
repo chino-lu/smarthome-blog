@@ -27,6 +27,9 @@ const fmt = (d: Date) =>
   <main class="index-list">
     {posts.map((post) => (
       <a class="post-row" href={`${base}posts/${post.id}/`}>
+        <span class="post-thumb">
+          <img src={`${base}${post.data.image.replace(/^\//, '')}`} alt={post.data.imageAlt} loading="lazy" width="140" height="74" />
+        </span>
         <span class="addr">{post.data.address}</span>
         <span>
           <span class="post-title">{post.data.title}</span>

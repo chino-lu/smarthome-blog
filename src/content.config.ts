@@ -10,6 +10,8 @@ const blog = defineCollection({
     readMinutes: z.number(),
     address: z.string(), // KNX-style group address used as the post's visual eyebrow, e.g. "1/1/1"
     sources: z.string(),
+    image: z.string(),      // path under /public, e.g. "/images/post-1.svg"
+    imageAlt: z.string(),
   }),
 });
 

@@ -20,6 +20,7 @@
 
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
+html, body{height:100%;}
 body{
   margin:0;
   background:var(--bg);
@@ -29,6 +30,18 @@ body{
   color:var(--text);
   font-family:var(--font-body);
   line-height:1.6;
+}
+
+.page-shell{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+.page-content{
+  flex:1 0 auto;
+}
+footer.site{
+  flex-shrink:0;
 }
 
 a{color:inherit;}

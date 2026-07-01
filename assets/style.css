@@ -1,0 +1,327 @@
+/* HomeIQ Blog — shared design system
+   Palette, type and the KNX-bus signature motif carried over from the print poster. */
+
+:root{
+  --bg: #0B120F;
+  --panel: #121C18;
+  --panel-2: #17231D;
+  --line: #24352C;
+  --accent: #B7FF5C;
+  --accent-dim: #7FBF3D;
+  --warm: #FF7A50;
+  --text: #F2F4EF;
+  --muted: #93A399;
+  --muted-2: #64766B;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--bg);
+  background-image:
+    radial-gradient(circle at 10% 5%, rgba(183,255,92,0.06), transparent 40%),
+    radial-gradient(circle at 92% 90%, rgba(255,122,80,0.05), transparent 45%);
+  color:var(--text);
+  font-family:var(--font-body);
+  line-height:1.6;
+}
+
+a{color:inherit;}
+
+::selection{background:var(--accent); color:#0B120F;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+}
+
+/* ---------- shell ---------- */
+.wrap{
+  max-width:760px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+nav.site{
+  border-bottom:1px solid var(--line);
+}
+nav.site .wrap{
+  max-width:920px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-top:26px;
+  padding-bottom:26px;
+}
+.brand-mark{
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:19px;
+  letter-spacing:-0.01em;
+  text-decoration:none;
+}
+.brand-mark span{color:var(--accent);}
+.status{
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--muted-2);
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.status::before{
+  content:"";
+  width:7px;height:7px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 8px var(--accent);
+}
+
+footer.site{
+  margin-top:80px;
+  border-top:1px solid var(--line);
+  padding:34px 0 50px;
+}
+footer.site .wrap{
+  max-width:920px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  flex-wrap:wrap;
+  gap:16px;
+}
+footer.site .fmark{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:14px;
+}
+footer.site .fsub{
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--muted-2);
+  margin-top:4px;
+}
+
+/* ---------- eyebrow / address tag (KNX group-address style) ---------- */
+.addr{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:var(--font-mono);
+  font-size:12px;
+  color:var(--accent-dim);
+  letter-spacing:0.02em;
+}
+.addr::before{content:"§";color:var(--muted-2);}
+
+/* ---------- index / hero ---------- */
+.hero{
+  max-width:920px;
+  margin:0 auto;
+  padding:70px 24px 50px;
+}
+.hero h1{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:46px;
+  line-height:1.08;
+  letter-spacing:-0.02em;
+  margin:18px 0 16px;
+  max-width:680px;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--accent);
+}
+.hero p.lead{
+  font-size:16px;
+  color:#CDD7CF;
+  max-width:520px;
+  margin:0;
+}
+
+.index-list{
+  max-width:920px;
+  margin:10px auto 0;
+  padding:0 24px 40px;
+}
+.post-row{
+  display:grid;
+  grid-template-columns:90px 1fr auto;
+  gap:22px;
+  align-items:baseline;
+  padding:26px 0;
+  border-top:1px solid var(--line);
+  text-decoration:none;
+  color:inherit;
+}
+.post-row:hover .post-title{color:var(--accent);}
+.post-row .addr{white-space:nowrap;}
+.post-title{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:19px;
+  line-height:1.3;
+  transition:color 0.15s ease;
+}
+.post-excerpt{
+  font-size:13.5px;
+  color:var(--muted);
+  margin-top:6px;
+  max-width:520px;
+}
+.post-meta{
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--muted-2);
+  text-align:right;
+  white-space:nowrap;
+}
+
+/* ---------- article ---------- */
+article.post{
+  max-width:720px;
+  margin:0 auto;
+  padding:60px 24px 20px;
+}
+article.post .addr{margin-bottom:18px;}
+article.post h1{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:38px;
+  line-height:1.12;
+  letter-spacing:-0.015em;
+  margin:0 0 14px;
+}
+.post-sub{
+  font-size:16px;
+  color:#CDD7CF;
+  max-width:600px;
+  margin:0 0 26px;
+}
+.byline{
+  display:flex;
+  gap:14px;
+  font-family:var(--font-mono);
+  font-size:11.5px;
+  color:var(--muted-2);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  padding:14px 0;
+  margin-bottom:40px;
+}
+
+.prose{
+  max-width:720px;
+  margin:0 auto;
+  padding:0 24px 20px;
+  font-size:16px;
+}
+.prose h2{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:24px;
+  letter-spacing:-0.01em;
+  margin:44px 0 14px;
+}
+.prose h3{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:18px;
+  margin:32px 0 10px;
+  color:var(--accent-dim);
+}
+.prose p{
+  color:#D8DED9;
+  margin:0 0 18px;
+}
+.prose strong{color:var(--text);}
+.prose ul{margin:0 0 18px; padding-left:20px; color:#D8DED9;}
+.prose li{margin-bottom:6px;}
+
+table.data{
+  width:100%;
+  border-collapse:collapse;
+  margin:22px 0 30px;
+  font-size:13.5px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
+}
+table.data th, table.data td{
+  padding:12px 16px;
+  text-align:left;
+  border-bottom:1px solid var(--line);
+}
+table.data th{
+  font-family:var(--font-mono);
+  font-size:10.5px;
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  color:var(--muted-2);
+  font-weight:500;
+}
+table.data tr:last-child td{border-bottom:none;}
+table.data td strong{color:var(--accent);}
+
+.callout{
+  margin:30px 0;
+  border-left:3px solid var(--warm);
+  background:rgba(255,122,80,0.06);
+  border-radius:0 8px 8px 0;
+  padding:18px 22px;
+  display:flex;
+  gap:14px;
+}
+.callout .mark{
+  font-family:var(--font-display);
+  font-weight:700;
+  color:var(--warm);
+  font-size:19px;
+  line-height:1.4;
+}
+.callout p{margin:0; font-size:13.5px; color:#D9DDD6;}
+.callout p strong{color:var(--text);}
+
+.source-note{
+  margin-top:44px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  font-family:var(--font-mono);
+  font-size:11px;
+  color:var(--muted-2);
+  line-height:1.8;
+}
+
+.back-link{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-family:var(--font-mono);
+  font-size:12px;
+  color:var(--muted);
+  text-decoration:none;
+  margin-top:36px;
+}
+.back-link:hover{color:var(--accent);}
+
+/* ---------- focus ---------- */
+a:focus-visible, .post-row:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+  border-radius:3px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:640px){
+  .hero h1{font-size:32px;}
+  article.post h1{font-size:28px;}
+  .post-row{grid-template-columns:1fr; gap:6px;}
+  .post-meta{text-align:left;}
+  table.data{font-size:12px;}
+  table.data th, table.data td{padding:10px 12px;}
+}

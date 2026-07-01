@@ -1,7 +1,12 @@
-# SmartHome Blog
+# SmartHome Blog — HomeIQ
+
+Live: https://chino-lu.github.io/smarthome-blog/
 
 Blogbeiträge rund um Smart Home, KNX und Gebäudeautomation — mit Fokus auf belastbare, quellenbasierte Aussagen statt Marketing-Versprechen.
 
-## Beiträge
+## Struktur
 
-- [Warum ein Smart Home nicht automatisch Energie spart — und wann doch](posts/warum-smart-home-nicht-immer-spart.md)
+- `index.html` — Blog-Startseite
+- `posts/` — einzelne Beiträge (HTML)
+- `content/` — Markdown-Quelltexte der Beiträge
+- `assets/style.css` — gemeinsames Design-System

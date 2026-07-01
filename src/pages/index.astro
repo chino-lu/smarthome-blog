@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const base = import.meta.env.BASE_URL;
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+---
+
+<BaseLayout
+  title="HomeIQ Blog — Notizen von der Werkbank"
+  description="Blog von HomeIQ: quellenbasierte Beiträge zu Smart Home, KNX und Gebäudeautomation."
+>
+  <header class="hero">
+    <span class="addr">1/0/0 · index</span>
+    <h1>Notizen von der <em>Werkbank</em>.</h1>
+    <p class="lead">
+      Was Studien, Normen und reale Installationen über Gebäudeautomation
+      tatsächlich sagen — ohne Verkaufsversprechen, mit Quellenangabe.
+    </p>
+  </header>
+
+  <main class="index-list">
+    {posts.map((post) => (
+      <a class="post-row" href={`${base}posts/${post.id}/`}>
+        <span class="addr">{post.data.address}</span>
+        <span>
+          <span class="post-title">{post.data.title}</span>
+          <span class="post-excerpt">{post.data.excerpt}</span>
+        </span>
+        <span class="post-meta">
+          {fmt(post.data.pubDate)}<br />
+          {post.data.readMinutes} Min.
+        </span>
+      </a>
+    ))}
+  </main>
+</BaseLayout>

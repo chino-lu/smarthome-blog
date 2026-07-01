@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+---
+
+<BaseLayout title={`${post.data.title} — HomeIQ Blog`} description={post.data.excerpt}>
+  <article class="post">
+    <span class="addr">{post.data.address}</span>
+    <h1>{post.data.title}</h1>
+    <p class="post-sub">{post.data.excerpt}</p>
+    <div class="byline">
+      <span>{fmt(post.data.pubDate)}</span>
+      <span>·</span>
+      <span>HomeIQ</span>
+      <span>·</span>
+      <span>{post.data.readMinutes} Min. Lesezeit</span>
+    </div>
+  </article>
+
+  <div class="prose">
+    <Content />
+
+    <div class="source-note">
+      <strong>Quelle:</strong> {post.data.sources}
+    </div>
+
+    <a class="back-link" href={`${import.meta.env.BASE_URL}`}>← Zurück zur Übersicht</a>
+  </div>
+</BaseLayout>

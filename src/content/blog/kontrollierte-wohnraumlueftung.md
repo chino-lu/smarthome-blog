@@ -1,47 +1,53 @@
 ---
 title: "Lüften ohne Wärmeverlust: Was kontrollierte Wohnraumlüftung wirklich bringt"
-excerpt: "Fensterlüften kostet Heizenergie, die direkt nach draußen entweicht. Studien zeigen, wie viel eine Lüftungsanlage mit Wärmerückgewinnung davon zurückholt."
+excerpt: "In Luxemburg ist die VMC double flux ab Effizienzklasse B praktisch Pflicht — und über den Klimabonus gezielt gefördert. Was die Anlage technisch leisten muss."
 pubDate: 2026-06-04
-readMinutes: 6
+readMinutes: 7
 address: "1/1/3"
-sources: "Institut für Technische Gebäudeausrüstung Dresden (ITG), Studie im Auftrag des Bundesverbands für Wohnungslüftung (VfW) · energie-experten.org · energieverbraucher.de · elektro.net"
+sources: "Institut für Technische Gebäudeausrüstung Dresden (ITG) · guichet.public.lu (Klimabonus-Reglement) · renov.lu · enrlux.lu"
 image: "/images/post-lueftung.svg"
 imageAlt: "Luftstrom-Diagramm eines Lüftungsgeräts mit Wärmerückgewinnung"
 ---
 
-Jedes Mal, wenn ein Fenster zum Lüften geöffnet wird, verlässt erwärmte Raumluft ungebremst das Haus — und mit ihr die Energie, die zum Aufheizen aufgewendet wurde. Bei gut gedämmten, luftdichten Gebäuden ist genau das mittlerweile einer der größten verbleibenden Verlustposten. Kontrollierte Wohnraumlüftung mit Wärmerückgewinnung setzt genau hier an.
+Jedes Mal, wenn ein Fenster zum Lüften geöffnet wird, verlässt erwärmte Raumluft ungebremst das Haus — und mit ihr die Energie, die zum Aufheizen aufgewendet wurde. In Luxemburg, wo Neubauten und sanierte Häuser zunehmend auf hohe Energieeffizienzklassen ausgelegt werden, ist das mittlerweile einer der größten verbleibenden Verlustposten. Kontrollierte Wohnraumlüftung mit Wärmerückgewinnung — auf Französisch VMC double flux, im Alltag oft einfach "Lüftungsanlage" — setzt genau hier an.
 
-## Warum das Thema überhaupt relevant wird
+## Warum das Thema in Luxemburg praktisch unumgänglich wird
 
-Moderne Neubauten und sanierte Altbauten werden zunehmend luftdicht ausgeführt, um Wärmeverluste über die Gebäudehülle zu minimieren. Das ist energetisch sinnvoll, hat aber einen Nebeneffekt: Ohne gezielte Lüftung sammelt sich Feuchtigkeit, die Luftqualität sinkt, und Schimmelrisiko steigt. Reines Fensterlüften wird zur einzigen Option — und die ist energetisch ineffizient, weil die komplette erwärmte Raumluft ungenutzt entweicht.
+Moderne, gut gedämmte Gebäude werden zunehmend luftdicht ausgeführt. Das ist energetisch sinnvoll, hat aber einen Nebeneffekt: Ohne gezielte Lüftung sammelt sich Feuchtigkeit, die Luftqualität sinkt, und das Schimmelrisiko steigt. Reines Fensterlüften wird zur einzigen Alternative — und die ist energetisch ineffizient.
+
+Deshalb ist eine kontrollierte Lüftung mit Wärmerückgewinnung in Luxemburg für das Erreichen der Energieeffizienzklasse B praktisch obligatorisch, und für die energetische Sanierung insgesamt einer der zentralen Bausteine.
 
 ## Wie viel eine Lüftungsanlage mit Wärmerückgewinnung tatsächlich spart
 
 Die Zahlen aus unabhängigen Untersuchungen liegen in einer klaren Bandbreite:
 
-- Moderne Wärmetauscher erreichen **Wärmerückgewinnungsraten von bis zu 95 %** — sie holen also den Großteil der Wärme aus der Abluft zurück, bevor diese das Haus verlässt.
-- Dadurch lassen sich die **Heizkosten geräte- und gebäudeabhängig um 30 % bis 50 %** senken, verglichen mit reinem Fensterlüften.
-- Eine Studie des Instituts für Technische Gebäudeausrüstung Dresden (ITG) im Auftrag des Bundesverbands für Wohnungslüftung kommt für Neubauten sogar auf eine Reduktion von Treibhausgasen sowie Primär- und Endenergieeinsatz für die Heizung von **bis zu 69 %** gegenüber der Fensterlüftung — mit marktführenden Systemen.
+- Moderne Wärmetauscher erreichen **Wärmerückgewinnungsraten von bis zu 90 bis 95 %**.
+- Eine Studie des Instituts für Technische Gebäudeausrüstung Dresden (ITG) kommt für Neubauten auf eine Reduktion von Treibhausgasen sowie Primär- und Endenergieeinsatz für die Heizung von bis zu **69 %** gegenüber der Fensterlüftung — mit marktführenden Systemen.
 - Gegenüber unkontrolliertem Lüften lassen sich Wärmeverluste um bis zu **90 %** reduzieren.
 
-Die Spannbreite dieser Zahlen erklärt sich vor allem durch den Gebäudetyp: Je luftdichter und besser gedämmt ein Haus ist, desto größer der relative Effekt der Wärmerückgewinnung — weil die Lüftungsverluste dann anteilig den größten Posten ausmachen.
+## Die technischen Vorgaben in Luxemburg
+
+Wer die Klimabonus-Förderung für eine kontrollierte Lüftungsanlage mit Wärmerückgewinnung in Anspruch nehmen will, muss klar definierte technische Kriterien erfüllen (Klimabonus-Reglement, Guichet.lu):
+
+- Der **Wärmerückgewinnungsgrad muss mindestens 80 %** betragen
+- Die **elektrische Leistungsaufnahme darf 0,40 W je m³/h Luftvolumenstrom nicht überschreiten**
+- Das Gebäude muss eine Luftdichtheit von **n50 ≤ 2,0 1/h** einhalten, nachgewiesen durch einen zertifizierten Blower-Door-Test nach DIN ISO 9972, Methode A, durchgeführt von einem FLIB-zertifizierten Prüfbüro
+- **Mindestens 80 % der energetischen Referenzfläche** müssen mechanisch belüftet sein
+
+Diese Vorgaben sind kein bürokratisches Beiwerk — sie stellen sicher, dass die Anlage tatsächlich das leistet, wofür sie gefördert wird. Eine Lüftungsanlage in einem undichten Gebäude arbeitet gegen ein Leck an, das sie nicht schließen kann, und verfehlt ihre berechnete Einsparung.
+
+## Kosten und Förderung
+
+Eine fertig installierte VMC double flux kostet in Luxemburg je nach Wohnfläche und Systemtyp zwischen **6.000 € und 18.000 €**. Über den Klimabonus lassen sich davon, je nach gewähltem Förderweg, **1.500 bis 3.500 €** direkt bezuschussen. Wird die Lüftungsanlage im Rahmen einer umfassenderen energetischen Sanierung mit Energieberatung eingebaut, fließt sie zusätzlich in die Gesamtberechnung der Klimabonus-Förderung ein, die je nach erreichtem Effizienzklassensprung noch deutlich höher ausfallen kann. Auf die gesamte Renovierung lässt sich außerdem der ermäßigte Mehrwertsteuersatz von 3 % statt 17 % anwenden.
+
+Mit den Einsparungen bei den Heizkosten amortisiert sich eine solche Anlage in der Praxis meist innerhalb von **8 bis 15 Jahren** — abhängig von Gebäudegröße, bisherigem energetischem Zustand und Heizkosten.
 
 ## Zentral oder dezentral?
 
-Es gibt zwei grundsätzliche Bauarten:
+**Zentrale Anlagen** verteilen die Luft über ein Rohrsystem im gesamten Gebäude und erreichen die höchsten Wärmerückgewinnungsraten. Der bauliche Aufwand ist entsprechend höher — primär praktikabel bei Neubauten oder Kernsanierungen.
 
-**Zentrale Anlagen** verteilen die Luft über ein Rohrsystem im gesamten Gebäude und erreichen die höchsten Wärmerückgewinnungsraten (bis zu 95 %). Der bauliche Aufwand ist entsprechend höher — Rohrleitungen müssen durch das ganze Haus verlegt werden, was sie primär für Neubauten oder Kernsanierungen praktikabel macht.
-
-**Dezentrale Geräte** sitzen raumweise direkt in der Außenwand, ohne Rohrnetz. Sie sind einfacher nachzurüsten, kommen aber meist auf niedrigere Wärmerückgewinnungsraten als zentrale Systeme.
-
-## Die Voraussetzung, die oft übersehen wird
-
-Eine Lüftungsanlage mit Wärmerückgewinnung funktioniert nur dann wie berechnet, wenn die Gebäudehülle tatsächlich dicht ist. Ein sogenannter Blower-Door-Test prüft das im fertigen Gebäude und deckt undichte Stellen auf. Ist die Hülle undicht, verpufft ein Teil des Effekts über unkontrollierte Nebenluft — die Anlage arbeitet dann gegen ein Leck an, das sie nicht schließen kann.
-
-## Förderung
-
-In Deutschland wird der Einbau einer Lüftungsanlage in Bestandsgebäuden mit **20 %** staatlich gefördert. Das senkt die Amortisationszeit spürbar, insbesondere in Kombination mit einer ohnehin anstehenden Sanierung.
+**Dezentrale Geräte** sitzen raumweise direkt in der Außenwand, ohne Rohrnetz. Sie sind einfacher nachzurüsten, kommen aber meist auf niedrigere Wärmerückgewinnungsraten.
 
 ## Fazit
 
-Kontrollierte Wohnraumlüftung mit Wärmerückgewinnung ist eine der wenigen Effizienzmaßnahmen, bei denen sich Komfort (bessere Luftqualität, kein Schimmelrisiko) und Einsparung (bis zu 50 % weniger Lüftungswärmeverlust) nicht gegenseitig ausschließen, sondern zusammenfallen. Voraussetzung ist eine luftdichte Gebäudehülle und eine Anlage, die zur Größe und Nutzung des Gebäudes passt — pauschale Geräte ohne Anpassung an den realen Bedarf schöpfen das Potenzial selten aus.
+In Luxemburg ist kontrollierte Wohnraumlüftung mit Wärmerückgewinnung längst keine Kür mehr, sondern für höhere Energieeffizienzklassen technische Voraussetzung. Die gute Nachricht: Komfort (bessere Luftqualität, kein Schimmelrisiko) und Einsparung (bis zu 69 % weniger Lüftungswärmeverlust) schließen sich nicht aus, sondern fallen zusammen — und werden über den Klimabonus gezielt gefördert, sofern die Anlage die technischen Mindestanforderungen erfüllt.

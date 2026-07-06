@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chino-lu.github.io/smarthome-blog/sitemap-index.xml

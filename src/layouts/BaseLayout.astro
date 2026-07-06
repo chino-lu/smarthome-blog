@@ -5,11 +5,74 @@ import { getCollection } from 'astro:content';
 interface Props {
   title: string;
   description: string;
+  image?: string;
+  article?: boolean;
+  pubDate?: Date;
+  modifiedDate?: Date;
+  author?: string;
 }
 
-const { title, description } = Astro.props;
+const {
+  title,
+  description,
+  image = '/images/post-placeholder.svg',
+  article = false,
+  pubDate,
+  modifiedDate,
+  author = 'Mike Klein',
+} = Astro.props;
+
 const base = import.meta.env.BASE_URL;
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') ?? 'https://chino-lu.github.io';
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl + base).toString().replace(/\/+$/, '') + '/';
+
+// OG image: use absolute URL
+const ogImageUrl = image.startsWith('http')
+  ? image
+  : `${siteUrl}${base}${image.replace(/^\//, '')}`;
+
 const postCount = (await getCollection('blog')).length;
+
+// JSON-LD structured data
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'HomeIQ',
+  url: `${siteUrl}${base}/`,
+  logo: `${siteUrl}${base}/images/post-placeholder.svg`,
+  description: 'KNX-basierte Gebäudeautomation — quellenbasierte Beiträge zu Smart Home, KNX und Gebäudeautomation von Mike Klein.',
+  founder: { '@type': 'Person', name: 'Mike Klein' },
+  address: { '@type': 'PostalAddress', addressCountry: 'LU', addressLocality: 'Luxembourg' },
+};
+
+const articleSchema = article ? {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description: description,
+  image: ogImageUrl,
+  author: { '@type': 'Person', name: author },
+  publisher: {
+    '@type': 'Organization',
+    name: 'HomeIQ',
+    logo: { '@type': 'ImageObject', url: `${siteUrl}${base}/images/post-placeholder.svg` },
+  },
+  ...(pubDate && { datePublished: pubDate.toISOString() }),
+  ...(modifiedDate && { dateModified: modifiedDate.toISOString() }),
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalUrl },
+  inLanguage: 'de-DE',
+} : null;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: article ? [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}${base}/` },
+    { '@type': 'ListItem', position: 2, name: title, item: canonicalUrl },
+  ] : [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: canonicalUrl },
+  ],
+};
 ---
 
 <!DOCTYPE html>
@@ -19,6 +82,32 @@ const postCount = (await getCollection('blog')).length;
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content={article ? 'article' : 'website'} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content="HomeIQ Blog" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content={ogImageUrl} />
+  <meta property="og:image:alt" content="HomeIQ Smart Home Blog" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageUrl} />
+
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="HomeIQ Blog" href={`${siteUrl}${base}/rss.xml`} />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -45,7 +134,7 @@ const postCount = (await getCollection('blog')).length;
           <div class="fmark">HomeIQ</div>
           <div class="fsub">by Mike Klein · KNX-basierte Gebäudeautomation · Luxembourg</div>
         </div>
-        <div class="fsub">Quellen werden bei jedem Beitrag offengelegt</div>
+        <div class="fsub">Quellen werden bei jedem Beitrag offengelegt · <a href={`${siteUrl}${base}/rss.xml`} style="color:var(--accent)">RSS</a></div>
       </div>
     </footer>
   </div>

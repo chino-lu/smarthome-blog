@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0d1117"/>
+  <!-- Battery icon -->
+  <rect x="150" y="140" width="120" height="60" rx="6" fill="none" stroke="#f85149" stroke-width="2"/>
+  <rect x="270" y="155" width="8" height="30" rx="2" fill="#f85149"/>
+  <rect x="158" y="148" width="104" height="44" rx="3" fill="#f85149" opacity="0.15"/>
+  <!-- Update progress bar (stuck at 10%) -->
+  <rect x="340" y="155" width="300" height="30" rx="4" fill="#21262d" stroke="#30363d" stroke-width="1"/>
+  <rect x="344" y="159" width="30" height="22" rx="2" fill="#f85149"/>
+  <text x="490" y="175" text-anchor="middle" fill="#f85149" font-family="monospace" font-size="13" font-weight="bold">10% — Abbruch</text>
+  <!-- IKEA Bilresa label -->
+  <text x="210" y="230" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="13">IKEA Bilresa</text>
+  <text x="210" y="250" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="11">Dualschalter · Matter · Battery</text>
+  <!-- Warning icons -->
+  <text x="490" y="230" text-anchor="middle" fill="#f85149" font-family="sans-serif" font-size="28">⚠</text>
+  <text x="490" y="260" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="12">OTA-Update bricht ab</text>
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" fill="#c9d1d9" font-family="sans-serif" font-size="18" font-weight="bold">Matter-Update: Batteriegeräte</text>
+  <text x="400" y="340" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="11">5× drücken · Antenne näher · Oder zurückgeben</text>
+</svg>

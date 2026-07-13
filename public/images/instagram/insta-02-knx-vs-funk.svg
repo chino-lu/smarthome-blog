@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <radialGradient id="bg-glow" cx="10%" cy="0%" r="50%">
+      <stop offset="0%" stop-color="#B7FF5C" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#B7FF5C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg-glow2" cx="90%" cy="0%" r="50%">
+      <stop offset="0%" stop-color="#FF7A50" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FF7A50" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="#0B120F"/>
+  <rect width="1080" height="1080" fill="url(#bg-glow)"/>
+  <rect width="1080" height="1080" fill="url(#bg-glow2)"/>
+
+  <!-- Top border line (KNX bus motif) -->
+  <rect x="0" y="0" width="1080" height="4" fill="#B7FF5C"/>
+  <rect x="0" y="4" width="1080" height="2" fill="#7FBF3D" opacity="0.4"/>
+
+  <!-- Eyebrow -->
+  <rect x="60" y="50" width="8" height="8" fill="#B7FF5C"/>
+  <text x="80" y="62" fill="#93A399" font-family="JetBrains Mono, monospace" font-size="22" font-weight="500" letter-spacing="2">1/1/2 · ENTSCHEIDUNG</text>
+
+  <!-- Headline -->
+    <text x="540" y="320" text-anchor="middle" fill="#F2F4EF" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700">KNX Kabel</text>
+    <text x="540" y="430" text-anchor="middle" fill="#F2F4EF" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700">oder Funk?</text>
+
+
+  <!-- Subline -->
+  <text x="540" y="780" text-anchor="middle" fill="#93A399" font-family="Inter, sans-serif" font-size="28" font-weight="400">Beide altern unterschiedlich</text>
+
+  <!-- Stat highlight box -->
+  <rect x="140" y="850" width="800" height="70" rx="10" fill="#17231D" stroke="#24352C" stroke-width="1"/>
+  <rect x="140" y="850" width="6" height="70" rx="3" fill="#FF7A50"/>
+  <text x="540" y="893" text-anchor="middle" fill="#F2F4EF" font-family="Inter, sans-serif" font-size="24" font-weight="600">Langzeitperspektive für Neubau Luxemburg</text>
+
+  <!-- Brand footer -->
+  <rect x="0" y="1020" width="1080" height="60" fill="#121C18"/>
+  <text x="60" y="1058" fill="#F2F4EF" font-family="Space Grotesk, sans-serif" font-size="24" font-weight="700">Home<span fill="#B7FF5C">IQ</span></text>
+  <text x="1020" y="1058" text-anchor="end" fill="#64766B" font-family="Inter, sans-serif" font-size="18" font-weight="400">by Mike Klein · Luxembourg</text>
+</svg>

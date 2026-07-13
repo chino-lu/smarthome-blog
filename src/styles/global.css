@@ -179,7 +179,7 @@ footer.site .fsub{
   color:var(--accent);
 }
 .hero p.lead{
-  font-size:18px;
+  font-size:20px;
   color:#CDD7CF;
   max-width:520px;
   margin:0;
@@ -230,7 +230,7 @@ footer.site .fsub{
 }
 .post-excerpt{
   display:block;
-  font-size:15px;
+  font-size:17px;
   color:var(--muted);
   margin-top:8px;
   max-width:520px;
@@ -259,7 +259,7 @@ article.post h1{
   margin:0 0 14px;
 }
 .post-sub{
-  font-size:18px;
+  font-size:20px;
   color:#CDD7CF;
   max-width:600px;
   margin:0 0 26px;
@@ -293,7 +293,7 @@ article.post h1{
   max-width:720px;
   margin:0 auto;
   padding:0 24px 20px;
-  font-size:18px;
+  font-size:20px;
 }
 .prose h2{
   font-family:var(--font-display);

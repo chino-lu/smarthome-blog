@@ -9,7 +9,7 @@ export async function GET(context: APIContext) {
 
   return rss({
     title: 'HomeIQ Blog — Notizen von der Werkbank',
-    description: 'Quellenbasierte Beiträge zu Smart Home, KNX und Gebäudeautomation von Mike Klein.',
+    description: 'Quellenbasierte Beiträge zu Smart Home, KNX und Gebäudeautomation.',
     site: context.site ?? 'https://chino-lu.github.io/smarthome-blog/',
     items: posts.map((post) => ({
       title: post.data.title,

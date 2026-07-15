@@ -47,7 +47,7 @@ Und @MarzyHA wartet lieber ab:
 
 ## Warum die GUI kommt (und warum sie trotzdem weh tut)
 
-Ich verstehe beide Seiten. ESPHome ist in den letzten zwei Jahren explosionsartig gewachsen. Das lag an den günstigen ESP32-Boards, am einfachen Flash-Prozess und an der YAML, die nach einer Lernkurve von vielleicht einer Stunde verständlich war. Aber diese Lernkurve existiert. Ein falsches Leerzeichen, eine falsche Einrückung — und die Datei kompiliert nicht. Für jemanden, der nur einen Temperatursensor bauen will, ist das frustrierend.
+Beide Seiten sind nachvollziehbar. ESPHome ist in den letzten zwei Jahren explosionsartig gewachsen. Das lag an den günstigen ESP32-Boards, am einfachen Flash-Prozess und an der YAML, die nach einer Lernkurve von vielleicht einer Stunde verständlich war. Aber diese Lernkurve existiert. Ein falsches Leerzeichen, eine falsche Einrückung — und die Datei kompiliert nicht. Für jemanden, der nur einen Temperatursensor bauen will, ist das frustrierend.
 
 Die GUI löst das. Du klickst, wählst aus Dropdowns, siehst sofort, was fehlt. Kein Tippfehler, keine fehlende Einrückung. Das ist für Neuankömmlinge ein echter Fortschritt.
 

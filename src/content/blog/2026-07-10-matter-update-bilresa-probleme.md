@@ -63,13 +63,13 @@ Die zweite Option: näher an den Border Router. @speedyhb hatte Erfolg mit 1 Met
 
 Die dritte: alternative Controller probieren. @Jenaih hatte mit einem von fünf Bilresas Erfolg über Apple Home, während Home Assistant dasselbe Update nicht durchbekam. Wenn einer nicht funktioniert, probier einen anderen. Das erinnert mich an die aktuellen [ESPHome Device Builder Diskussionen](/blog/esphome-yaml-gui) — auch dort sucht die Community nach Wegen, die die offizielle Lösung nicht bietet.
 
-## Was ich daraus lerne
+## Was man daraus lernt
 
 Matter ist kein fertiges System. Es ist ein Standard, der in der Praxis immer noch rau ist, besonders bei batteriebetriebenen Geräten. Die Idee, Updates über das Thread-Netzwerk zu pushen, ist gut. Die Umsetzung bei Geräten, die schlafen und nur wenig Strom haben, ist das Problem.
 
-Ich nutze selbst Home Assistant und habe ein paar Matter-Geräte. Aktuell keine batteriebetriebenen. Wenn ich welche hätte, würde ich vor jedem Update die Geräte physisch in die Nähe des Border Routers legen und Zeit einplanen. Matter ist nicht "drücken und vergessen". Noch nicht.
+Wer Home Assistant mit Matter-Geräten betreibt, sollte vor jedem Update die Geräte physisch in die Nähe des Border Routers legen und Zeit einplanen. Matter ist nicht "drücken und vergessen". Noch nicht.
 
-Interessant finde ich auch die Reaktion von @dejitaru im [Home Assistant Thread zum Matter-Update](https://community.home-assistant.io/t/1014865):
+Interessant ist auch die Reaktion von @dejitaru im [Home Assistant Thread zum Matter-Update](https://community.home-assistant.io/t/1014865):
 
 > "Ohhhhh awesome! Once 1.6 is released NFC pairing will be so clutch!"
 
@@ -79,6 +79,6 @@ NFC-Pairing kommt mit matter.js 1.6. Das macht die Ersteinrichtung einfacher. Ab
 
 Der [community-smarthome.de Thread](https://community-smarthome.de/t/10869) zeigt, wo Matter im Juli 2026 steht. Netzbetriebene Geräte aktualisieren problemlos. Batteriebetriebene sind ein Glücksspiel. IKEA hat mit dem Bilresa ein günstiges Matter-Gerät auf den Markt gebracht, aber die Update-Erfahrung ist so frustrierend, dass Nutzer ihre Geräte zurückgeben.
 
-Meine Empfehlung: Wenn du batteriebetriebene Matter-Geräte kaufst, rechne mit Update-Problemen. Lege das Gerät nah an den Border Router, drücke regelmäßig den Button, und probiere verschiedene Controller aus. Oder warte auf matter.js 1.6, auch wenn NFC-Pairing primär die Einrichtung, nicht das Update, erleichtert.
+Die Empfehlung: Wer batteriebetriebene Matter-Geräte kauft, sollte mit Update-Problemen rechnen. Das Gerät nah an den Border Router legen, regelmäßig den Button drücken, und verschiedene Controller ausprobieren. Oder auf matter.js 1.6 warten, auch wenn NFC-Pairing primär die Einrichtung, nicht das Update, erleichtert.
 
 Matter ist die Zukunft. Wir sind im Juli 2026 noch nicht da.

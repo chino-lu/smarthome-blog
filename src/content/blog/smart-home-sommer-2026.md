@@ -11,7 +11,7 @@ imageAlt: "Home Assistant 2026.7 Release mit purpose-specific Triggern und Matte
 
 # Home Assistant 2026.7: Neue Trigger, Matter.js und Proxy
 
-Home Assistant 2026.7 ist da und es ist eines der substantialsten Releases der letzten Monate. Drei Updates in sechs Wochen verändern, wie du dein Smart Home automatisierst, wie Matter Geräte verbindet und wie Integrationen mit dem Netzwerk umgehen. Ich habe mir die Änderungen im Detail angesehen und erkläre hier, was praktisch für dich bedeutet.
+Home Assistant 2026.7 ist da und es ist eines der substantialsten Releases der letzten Monate. Drei Updates in sechs Wochen verändern, wie Smart Homes automatisiert werden, wie Matter Geräte verbindet und wie Integrationen mit dem Netzwerk umgehen. Die Änderungen im Detail — und was praktisch dahinter steht.
 
 ## Purpose-specific Trigger: Automatisierungen ohne Boilerplate
 
@@ -27,7 +27,7 @@ Wer sich mit Smart Home Automatisierung beschäftigt, weiss, dass das bisher ein
 
 ## Activity-Logbook: Aufräumen statt suchen
 
-Das Logbook heisst jetzt "Activity" und wurde komplett neu aufgebaut. Eine aufgeräumte Timeline, gruppiert nach Tagen, in der gleichen Sprache wie der Rest von Home Assistant. Ich öffne es seit dem Update einfach so, um reinzuschauen.
+Das Logbook heisst jetzt "Activity" und wurde komplett neu aufgebaut. Eine aufgeräumte Timeline, gruppiert nach Tagen, in der gleichen Sprache wie der Rest von Home Assistant. Man öffnet es seit dem Update einfach so, um reinzuschauen.
 
 Das alte Logbook war eine chronologische Liste aller State-Changes, die schnell unübersichtlich wurde. Wenn du herausfinden wolltest, wann das Licht im Schlafzimmer angegangen ist, musstest du durch hunderte Einträge scrollen. Das neue Activity-Logbook gruppiert Ereignisse nach Tagen und Tagen nach Gerät und Aktion. Du siehst auf einen Blick: Heute Morgen um 6:42 Uhr ging das Schlafzimmerlicht an, die Heizung startete um 7:00 Uhr, die Kaffeemaschine um 7:15 Uhr.
 

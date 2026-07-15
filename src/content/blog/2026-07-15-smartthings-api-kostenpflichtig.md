@@ -53,7 +53,7 @@ KNX kommuniziert über den Bus. Punkt. Kein Server in Korea entscheidet, ob das 
 
 Zigbee ist ähnlich. Ein Zigbee-Stick am Home Assistant Server, Geräte von IKEA, Philips, Aqara, alles läuft lokal über das Mesh. Kein Cloud-Account nötig. Selbst wenn ein Hersteller seine App einstellt, sprechen die Geräte weiterhin Zigbee und reagieren auf den Coordinator. Die [Sicherheit im Smart Home](/posts/smart-home-sicherheit/) beginnt nicht mit Firewalls, sondern mit dem Verzicht auf Cloud-Abhängigkeiten.
 
-ESPHome ist der konsequenteste lokale Ansatz. Ich flashe einen ESP32, schreibe mein YAML, und der Mikrocontroller macht was ich will. Kein Cloud, kein Account, keine API. Schon gar nicht eine, die plötzlich Geld kostet. Wer sich für [ESPHome YAML](/blog/esphome-yaml-gui) interessiert, betritt ein Ökosystem, in dem "Kostenpflichtig" nicht existiert.
+ESPHome ist der konsequenteste lokale Ansatz. Ein ESP32 wird geflasht, ein YAML geschrieben, und der Mikrocontroller macht was er soll. Kein Cloud, kein Account, keine API. Schon gar nicht eine, die plötzlich Geld kostet. Wer sich für [ESPHome YAML](/blog/esphome-yaml-gui) interessiert, betritt ein Ökosystem, in dem "Kostenpflichtig" nicht existiert.
 
 ## "Works with Home Assistant" als Gegenbewegung
 
@@ -63,9 +63,9 @@ Das ist kein Zufall. Es ist die Gegenbewegung zu dem, was Samsung gerade macht. 
 
 Die [Matter-Update-Probleme mit IKEA Bilresa](/blog/2026-07-10-matter-update-bilresa-probleme) zeigen zwar, dass auch lokale Standards noch kinderkrank sein können. Aber das Problem dort ist technischer Natur — Updates bei batteriebetriebenen Geräten brechen ab. Das SmartThings-Problem ist struktureller Natur: ein Hersteller ändert bewusst die Bedingungen, um mehr Geld aus bestehenden Kunden zu pressen.
 
-## Was ich daraus lerne
+## Was man daraus lernt
 
-Ich nutze Home Assistant seit Jahren. Ich habe nie ein Samsung-SmartThings-Gerät gekauft, und nach diesem Thread werde ich es auch nicht tun. Die Logik ist einfach: Wer ein Gerät nur über die Cloud eines einzelnen Herstellers steuern kann, besitzt es nicht wirklich. Er mietet die Steuerung, und der Vermieter kann die Konditionen jederzeit ändern.
+Wer Home Assistant seit Jahren nutzt und nie ein Samsung-SmartThings-Gerät gekauft hat, wird es nach diesem Thread auch nicht tun. Die Logik ist einfach: Wer ein Gerät nur über die Cloud eines einzelnen Herstellers steuern kann, besitzt es nicht wirklich. Man mietet die Steuerung, und der Vermieter kann die Konditionen jederzeit ändern.
 
 Wer baut ein Haus oder renoviert, sollte sich diese Frage stellen: Was passiert in fünf Jahren, wenn der Hersteller die API schließt, den Server abschaltet oder Geld verlangt? Bei KNX ist die Antwort: nichts, der Bus läuft weiter. Bei Zigbee: nichts, das Mesh existiert lokal. Bei ESPHome: nichts, der ESP32 macht was sein YAML sagt.
 

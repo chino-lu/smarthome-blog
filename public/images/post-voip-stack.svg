@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#c9d1d9" font-family="sans-serif" font-size="18" font-weight="bold">VoIP Stack: Home Assistant als SIP-Telefonzentrale</text>
+
+  <!-- Central HA node -->
+  <g transform="translate(340, 160)">
+    <rect x="0" y="0" width="120" height="60" rx="6" fill="#1c2128" stroke="#3fb950" stroke-width="2"/>
+    <text x="60" y="28" text-anchor="middle" fill="#3fb950" font-family="sans-serif" font-size="14" font-weight="bold">Home Assistant</text>
+    <text x="60" y="46" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="11">SIP-Registrar · RTP</text>
+  </g>
+
+  <!-- ESPHome device left -->
+  <g transform="translate(80, 150)">
+    <rect x="0" y="0" width="110" height="60" rx="5" fill="#1c2128" stroke="#bc8cff" stroke-width="2"/>
+    <text x="55" y="28" text-anchor="middle" fill="#bc8cff" font-family="sans-serif" font-size="13" font-weight="bold">ESPHome</text>
+    <text x="55" y="46" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="10">SIP Endpoint</text>
+    <!-- mic icon -->
+    <circle cx="90" cy="15" r="4" fill="none" stroke="#bc8cff" stroke-width="1.5"/>
+  </g>
+
+  <!-- ESPHome device 2 -->
+  <g transform="translate(80, 250)">
+    <rect x="0" y="0" width="110" height="50" rx="5" fill="#1c2128" stroke="#bc8cff" stroke-width="2"/>
+    <text x="55" y="22" text-anchor="middle" fill="#bc8cff" font-family="sans-serif" font-size="13" font-weight="bold">ESP-Tablet</text>
+    <text x="55" y="38" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="10">Intercom</text>
+  </g>
+
+  <!-- External phone right -->
+  <g transform="translate(620, 160)">
+    <rect x="0" y="0" width="110" height="60" rx="8" fill="#1c2128" stroke="#58a6ff" stroke-width="2"/>
+    <text x="55" y="28" text-anchor="middle" fill="#58a6ff" font-family="sans-serif" font-size="13" font-weight="bold">Handy</text>
+    <text x="55" y="46" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="10">externer Anruf</text>
+  </g>
+
+  <!-- Assist pipeline node -->
+  <g transform="translate(620, 250)">
+    <rect x="0" y="0" width="110" height="50" rx="5" fill="#1c2128" stroke="#f78166" stroke-width="2"/>
+    <text x="55" y="22" text-anchor="middle" fill="#f78166" font-family="sans-serif" font-size="13" font-weight="bold">Assist</text>
+    <text x="55" y="38" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="10">per Telefon</text>
+  </g>
+
+  <!-- Connection lines -->
+  <line x1="190" y1="180" x2="340" y2="190" stroke="#3fb950" stroke-width="2"/>
+  <line x1="190" y1="275" x2="340" y2="200" stroke="#3fb950" stroke-width="2"/>
+  <line x1="460" y1="190" x2="620" y2="190" stroke="#58a6ff" stroke-width="2"/>
+  <line x1="460" y1="200" x2="620" y2="275" stroke="#f78166" stroke-width="2"/>
+
+  <!-- Protocol labels -->
+  <text x="265" y="175" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="10">SIP / RTP</text>
+  <text x="540" y="175" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="10">SIP / RTP</text>
+  <text x="540" y="235" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="10">Call → Assist</text>
+
+  <!-- "lokal" badge -->
+  <text x="400" y="105" text-anchor="middle" fill="#3fb950" font-family="sans-serif" font-size="12" font-weight="bold">lokal · kein Cloud · offener Standard</text>
+
+  <!-- Footer -->
+  <text x="400" y="370" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="11">VoIP Stack 2026.7 · HA als SIP-Registrar · ESPHome als Endpunkte</text>
+</svg>

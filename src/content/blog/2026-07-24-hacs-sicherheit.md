@@ -7,6 +7,7 @@ address: "1/3/3"
 sources: "community.home-assistant.io · community-smarthome.de · github.com"
 image: "/images/post-hacs-sicherheit.svg"
 imageAlt: "Home Assistant Hub mit Custom-Integration als gefährdetem Knoten, Sperre-Symbol über HACS-Repository"
+aiGenerated: true
 ---
 
 # HACS Custom-Integrationen: Wenn 'vibe coded' zur Sicherheitslücke wird

@@ -35,6 +35,7 @@ const fmt = (d: Date) =>
         <span>
           <span class="post-title">{post.data.title}</span>
           <span class="post-excerpt">{post.data.excerpt}</span>
+          {post.data.aiGenerated && <span class="ai-badge"><svg viewBox="0 0 566.93 566.93" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="283.47" cy="283.47" r="182.74" fill="currentColor"/></svg> KI-generiert</span>}
         </span>
         <span class="post-meta">
           {fmt(post.data.pubDate)}<br />

@@ -7,6 +7,7 @@ address: "1/3/2"
 sources: "community.home-assistant.io · knx-user-forum.de"
 image: "/images/post-wall-panel-native.svg"
 imageAlt: "Natives Wall-Panel im Unterputzgehäuse mit KNX-IP-Anbindung als Alternative zum Tablet-Dashboard"
+aiGenerated: true
 ---
 
 # Wall-Panels jenseits des Tablets: Wenn Lovelace nicht reicht

@@ -7,6 +7,7 @@ address: "1/1/4"
 sources: "police.public.lu · bosch-smarthome.com · lupus-electronics.de · adac.de"
 image: "/images/post-sicherheit.svg"
 imageAlt: "Smart Home Sicherheit: Hausgrundriss mit Fenstersensoren und vernetzter Alarmanlage"
+aiGenerated: true
 ---
 
 # Smart Home Sicherheit: Einbruchschutz, der wirklich funktioniert

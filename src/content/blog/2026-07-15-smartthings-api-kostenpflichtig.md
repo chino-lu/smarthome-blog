@@ -7,6 +7,7 @@ address: "1/3/1"
 sources: "community.home-assistant.io · community-smarthome.de · openhomefoundation.org"
 image: "/images/post-smartthings-api.svg"
 imageAlt: "SmartThings API wird kostenpflichtig — Cloud-Sperre mit Dollar-Zeichen vor lokalem Smart Home Setup"
+aiGenerated: true
 ---
 
 # SmartThings API wird kostenpflichtig: Wer lokal kontrolliert, gewinnt

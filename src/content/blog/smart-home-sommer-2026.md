@@ -7,6 +7,7 @@ address: "1/1/5"
 sources: "home-assistant.io/blog · openhomefoundation.org · github.com/home-assistant/core"
 image: "/images/post-sommer-2026.svg"
 imageAlt: "Home Assistant 2026.7 Release mit purpose-specific Triggern und Matter.js"
+aiGenerated: true
 ---
 
 # Home Assistant 2026.7: Neue Trigger, Matter.js und Proxy

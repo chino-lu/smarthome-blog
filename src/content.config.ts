@@ -12,6 +12,7 @@ const blog = defineCollection({
     sources: z.string(),
     image: z.string(),      // path under /public, e.g. "/images/post-1.svg"
     imageAlt: z.string(),
+    aiGenerated: z.boolean().default(true),  // EU AI Act transparency — Article 50(4)
   }),
 });
 

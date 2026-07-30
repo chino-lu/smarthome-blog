@@ -7,6 +7,7 @@ address: "1/1/6"
 sources: "community.home-assistant.io · community-smarthome.de · github.com/sokolsok/ESPConfig-Designer"
 image: "/images/post-esphome-yaml-gui.svg"
 imageAlt: "ESPHome YAML vs GUI: Code-Editor auf der linken Seite, grafischer Device Builder auf der rechten"
+aiGenerated: true
 ---
 
 # ESPHome YAML vs GUI: Der Device Builder spaltet die Community

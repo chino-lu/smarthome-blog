@@ -7,6 +7,7 @@ address: "1/1/1"
 sources: "oeko.de · polarstern.com · enovos.lu · guichet.public.lu"
 image: "/images/post-energie-fork.svg"
 imageAlt: "Smart Home Energie sparen: Eine Bus-Leitung teilt sich in effizienten und ineffizienten Pfad"
+aiGenerated: true
 ---
 
 # Smart Home Energie sparen: Wann es funktioniert und wann nicht

@@ -7,6 +7,7 @@ address: "1/1/8"
 sources: "community.home-assistant.io · home-assistant.io · esphome.io"
 image: "/images/post-voip-stack.svg"
 imageAlt: "Home Assistant VoIP Stack — SIP-Telefonzentrale mit verbundenen ESPHome-Endgeräten und Handy als externer Anruf"
+aiGenerated: true
 ---
 
 # VoIP Stack: Home Assistant wird zum Telefonsystem

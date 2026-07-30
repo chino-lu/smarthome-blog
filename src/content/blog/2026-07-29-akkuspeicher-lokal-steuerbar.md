@@ -7,6 +7,7 @@ address: "1/4/1"
 sources: "community-smarthome.de · community.home-assistant.io · github.com"
 image: "/images/post-akkuspeicher-lokal.svg"
 imageAlt: "Akkuspeicher lokal steuerbar: Heimspeicher mit Modbus TCP und REST-Anbindung an Home Assistant, Cloud durchgestrichen"
+aiGenerated: true
 ---
 
 # Akkuspeicher lokal steuerbar: Welche Systeme wirklich ohne Cloud funktionieren

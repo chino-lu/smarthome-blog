@@ -7,6 +7,7 @@ address: "1/1/7"
 sources: "community-smarthome.de · community.home-assistant.io · openhomefoundation.org"
 image: "/images/post-matter-bilresa.svg"
 imageAlt: "Matter-OTA-Update bricht bei IKEA Bilresa Dualschalter ab — rot markierte Fortschrittsanzeige bei 10 Prozent"
+aiGenerated: true
 ---
 
 # Matter-Update-Probleme: IKEA Bilresa und die Update-Falle

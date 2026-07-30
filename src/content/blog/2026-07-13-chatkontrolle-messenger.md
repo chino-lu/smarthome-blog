@@ -7,6 +7,7 @@ address: "3/0/0"
 sources: "golem.de · netzpolitik.org · digitalcourage.de"
 image: "/images/post-chatkontrolle.svg"
 imageAlt: "Smartphone mit verschlüsselten Nachrichtendiagrammen"
+aiGenerated: true
 ---
 
 Am 9. Juli 2026 hat das EU-Parlament etwas beschlossen, das die Mehrheit der Abgeordneten eigentlich ablehnte. Die Ausnahmeregelung, die Messengerdienste vom Datenschutz befreit, wurde verlängert. 314 Stimmen stimmten dagegen. 360 wären nötig gewesen, um den Text endgültig zu begraben. So gilt er als angenommen.

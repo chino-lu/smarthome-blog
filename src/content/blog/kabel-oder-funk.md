@@ -7,6 +7,7 @@ address: "1/1/2"
 sources: "ISO/IEC 14543-3 (KNX-Standard) · peaknx.com · technikkram.net · smartiva.info · renov.lu (Energiepassport-Klassen Luxemburg)"
 image: "/images/post-knx-vs-funk.svg"
 imageAlt: "KNX vs Funk Vergleich: Busleitung-Topologie neben drahtlosem Funknetz"
+aiGenerated: true
 ---
 
 # KNX vs Funk: Welches Smart Home System wirklich überzeugt

@@ -7,6 +7,7 @@ address: "1/1/3"
 sources: "Institut für Technische Gebäudeausrüstung Dresden (ITG) · guichet.public.lu (Klimabonus-Reglement) · renov.lu · enrlux.lu"
 image: "/images/post-lueftung.svg"
 imageAlt: "Kontrollierte Wohnraumlüftung mit Wärmerückgewinnung: Luftstrom-Diagramm einer VMC double flux"
+aiGenerated: true
 ---
 
 # Kontrollierte Wohnraumlüftung: Was VMC double flux in Luxemburg leistet

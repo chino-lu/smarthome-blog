@@ -7,6 +7,7 @@ address: "1/2/1"
 sources: "knx-user-forum.de · github.com/abeggled/openbridgeserver · open-bridge.io"
 image: "/images/post-obs.svg"
 imageAlt: "OpenBridgeServer KNX als zentraler Multiprotokoll-Server mit Adaptern"
+aiGenerated: true
 ---
 
 # OpenBridgeServer KNX: Open-Source-Alternative zum Timberwolf

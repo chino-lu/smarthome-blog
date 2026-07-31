@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0d1117"/>
+
+  <!-- Smartphone with "App not found" on the left -->
+  <g transform="translate(80, 90)">
+    <rect x="0" y="0" width="120" height="220" rx="14" fill="#1c2128" stroke="#f78166" stroke-width="2"/>
+    <rect x="10" y="20" width="100" height="180" rx="4" fill="#0d1117"/>
+    <!-- Cloud icon with X -->
+    <ellipse cx="60" cy="90" rx="35" ry="22" fill="none" stroke="#f78166" stroke-width="2" opacity="0.6"/>
+    <ellipse cx="42" cy="78" rx="16" ry="12" fill="none" stroke="#f78166" stroke-width="2" opacity="0.6"/>
+    <line x1="30" y1="65" x2="90" y2="115" stroke="#f78166" stroke-width="3"/>
+    <!-- "App entfernt" text -->
+    <text x="60" y="145" text-anchor="middle" fill="#f78166" font-family="sans-serif" font-size="11" font-weight="bold">App</text>
+    <text x="60" y="160" text-anchor="middle" fill="#f78166" font-family="sans-serif" font-size="11" font-weight="bold">entfernt</text>
+    <!-- Home button -->
+    <circle cx="60" cy="210" r="6" fill="none" stroke="#484f58" stroke-width="1.5"/>
+  </g>
+
+  <!-- Smart Home Box (dead) in center -->
+  <g transform="translate(290, 130)">
+    <rect x="0" y="0" width="140" height="100" rx="6" fill="#1c2128" stroke="#484f58" stroke-width="2"/>
+    <!-- LED off -->
+    <circle cx="20" cy="20" r="4" fill="#333"/>
+    <!-- "No server" text -->
+    <text x="70" y="50" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="12" font-weight="bold">Smart Friends</text>
+    <text x="70" y="68" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="10">Box 2.0</text>
+    <text x="70" y="85" text-anchor="middle" fill="#f78166" font-family="sans-serif" font-size="9">offline</text>
+  </g>
+
+  <!-- Broken connection line -->
+  <line x1="200" y1="180" x2="290" y2="180" stroke="#f78166" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="430" y1="180" x2="520" y2="180" stroke="#f78166" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Rollladen (still works manually) on the right -->
+  <g transform="translate(520, 80)">
+    <!-- Window frame -->
+    <rect x="0" y="0" width="160" height="200" rx="4" fill="none" stroke="#58a6ff" stroke-width="2"/>
+    <!-- Rollladen slats partially down -->
+    <rect x="5" y="5" width="150" height="80" fill="#1c2128" stroke="#58a6ff" stroke-width="1"/>
+    <line x1="5" y1="20" x2="155" y2="20" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="35" x2="155" y2="35" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="50" x2="155" y2="50" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="65" x2="155" y2="65" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <line x1="5" y1="80" x2="155" y2="80" stroke="#58a6ff" stroke-width="1" opacity="0.5"/>
+    <!-- Window glass below -->
+    <rect x="5" y="90" width="150" height="105" fill="#1c2128" stroke="#58a6ff" stroke-width="1" opacity="0.3"/>
+    <line x1="80" y1="90" x2="80" y2="195" stroke="#58a6ff" stroke-width="1" opacity="0.3"/>
+    <line x1="5" y1="142" x2="155" y2="142" stroke="#58a6ff" stroke-width="1" opacity="0.3"/>
+    <!-- Label -->
+    <text x="80" y="220" text-anchor="middle" fill="#58a6ff" font-family="sans-serif" font-size="11" font-weight="bold">Rollladen</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#c9d1d9" font-family="sans-serif" font-size="17" font-weight="bold">Smart Friends: App weg, Server tot, Hardware übrig</text>
+
+  <!-- BBS insolvent label -->
+  <g transform="translate(310, 250)">
+    <rect x="0" y="0" width="180" height="28" rx="4" fill="#1c2128" stroke="#f78166" stroke-width="1.5"/>
+    <text x="90" y="19" text-anchor="middle" fill="#f78166" font-family="sans-serif" font-size="12" font-weight="bold">BBS liquidiert · 28.10.2025</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="400" y="370" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="11">Schellenberg · Steinel · ABUS · Paulmann — Smart Friends insolvent</text>
+</svg>

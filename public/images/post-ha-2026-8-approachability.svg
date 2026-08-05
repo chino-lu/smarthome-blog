@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#0d1117"/>
+
+  <!-- Left: Old URL with :8123 (crossed out) -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="220" height="60" rx="6" fill="#1c2128" stroke="#f78166" stroke-width="1.5"/>
+    <text x="110" y="28" text-anchor="middle" fill="#c9d1d9" font-family="monospace" font-size="13" font-weight="bold">homeassistant.local</text>
+    <text x="110" y="48" text-anchor="middle" fill="#f78166" font-family="monospace" font-size="13" font-weight="bold">:8123</text>
+    <!-- Cross out -->
+    <line x1="0" y1="30" x2="220" y2="30" stroke="#f78166" stroke-width="2.5"/>
+  </g>
+
+  <!-- Arrow to new URL -->
+  <g transform="translate(270, 125)">
+    <line x1="0" y1="15" x2="70" y2="15" stroke="#58a6ff" stroke-width="2"/>
+    <polygon points="70,10 78,15 70,20" fill="#58a6ff"/>
+  </g>
+
+  <!-- Center: New clean URL -->
+  <g transform="translate(360, 110)">
+    <rect x="0" y="0" width="200" height="60" rx="6" fill="#1c2128" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="100" y="38" text-anchor="middle" fill="#3fb950" font-family="monospace" font-size="14" font-weight="bold">homeassistant.local</text>
+  </g>
+
+  <!-- Right: Version badge -->
+  <g transform="translate(620, 110)">
+    <rect x="0" y="0" width="140" height="60" rx="6" fill="#1c2128" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="70" y="38" text-anchor="middle" fill="#58a6ff" font-family="sans-serif" font-size="16" font-weight="bold">2026.8</text>
+  </g>
+
+  <!-- Bottom-left: "Developer Tools" renamed to "Tools" -->
+  <g transform="translate(60, 220)">
+    <rect x="0" y="0" width="180" height="36" rx="4" fill="#1c2128" stroke="#484f58" stroke-width="1"/>
+    <text x="90" y="23" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="12" font-weight="bold" text-decoration="line-through">Developer Tools</text>
+    <line x1="0" y1="18" x2="180" y2="18" stroke="#f78166" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  <g transform="translate(60, 264)">
+    <rect x="0" y="0" width="180" height="36" rx="4" fill="#1c2128" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="90" y="23" text-anchor="middle" fill="#3fb950" font-family="sans-serif" font-size="13" font-weight="bold">Tools</text>
+  </g>
+
+  <!-- Bottom-center: Template State Restore -->
+  <g transform="translate(300, 220)">
+    <rect x="0" y="0" width="200" height="80" rx="6" fill="#1c2128" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="100" y="28" text-anchor="middle" fill="#58a6ff" font-family="sans-serif" font-size="12" font-weight="bold">Template State</text>
+    <text x="100" y="46" text-anchor="middle" fill="#c9d1d9" font-family="sans-serif" font-size="11">survives restart</text>
+    <!-- Restart arrow -->
+    <path d="M 40 58 Q 100 72 160 58" fill="none" stroke="#3fb950" stroke-width="2"/>
+    <polygon points="160,58 154,52 154,64" fill="#3fb950"/>
+    <text x="100" y="74" text-anchor="middle" fill="#3fb950" font-family="sans-serif" font-size="9">neustartfest</text>
+  </g>
+
+  <!-- Bottom-right: Expert label removed -->
+  <g transform="translate(560, 220)">
+    <rect x="0" y="0" width="180" height="36" rx="4" fill="#1c2128" stroke="#484f58" stroke-width="1"/>
+    <text x="90" y="23" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="12" font-weight="bold" text-decoration="line-through">Advanced / Expert</text>
+    <line x1="0" y1="18" x2="180" y2="18" stroke="#f78166" stroke-width="1.5" opacity="0.7"/>
+  </g>
+  <g transform="translate(560, 264)">
+    <rect x="0" y="0" width="180" height="36" rx="4" fill="#1c2128" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="90" y="23" text-anchor="middle" fill="#3fb950" font-family="sans-serif" font-size="11" font-weight="bold">Feature beschreiben</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#c9d1d9" font-family="sans-serif" font-size="18" font-weight="bold">Home Assistant 2026.8: Approachability</text>
+  <text x="400" y="70" text-anchor="middle" fill="#8b949e" font-family="sans-serif" font-size="12">Port weg · Expert-Labels weg · Template-States überleben Neustart</text>
+
+  <!-- Footer -->
+  <text x="400" y="370" text-anchor="middle" fill="#484f58" font-family="sans-serif" font-size="11">community.home-assistant.io · community-smarthome.de · rc.home-assistant.io</text>
+</svg>
